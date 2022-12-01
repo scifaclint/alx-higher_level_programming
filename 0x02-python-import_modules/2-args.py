@@ -5,7 +5,7 @@ import sys
 def getargv(list):
     list.remove(list[0])
     if len(list) == 0:
-        print("0 arguments.")
+        print("{} arguments.".format(len(list)))
     else:
         if len(list) == 1:
             print("{} argument:".format(len(list)))
