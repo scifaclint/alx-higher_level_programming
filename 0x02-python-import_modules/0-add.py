@@ -3,5 +3,4 @@ import add_0
 
 a = 1
 b = 2
-sumit = add_0.add(a, b)
-print("{} + {} = {}".format(a, b, sumit))
+print("{} + {} = {}".format(a, b, add_0.add(a, b)))
