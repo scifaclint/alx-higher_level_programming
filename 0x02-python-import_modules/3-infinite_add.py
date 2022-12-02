@@ -9,7 +9,7 @@ if __name__ == "__main__":
     total = 0
     for a in range(len(arguments)):
         total += int(arguments[a])
-    print(total)
+    print("{}".format(total))
         
         
         
