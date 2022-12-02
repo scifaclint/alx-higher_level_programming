@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-import sys
+
 
 if __name__ == "__main__":
     """Print the number of and list of arguments."""
+    import sys
+
     def getargv(list):
         list.remove(list[0])
         getint = int(list[0])
@@ -15,5 +17,6 @@ if __name__ == "__main__":
                 getint += int(list[a])
                 a += 1
         print(getint)
-    
+
+
 getargv(sys.argv)
