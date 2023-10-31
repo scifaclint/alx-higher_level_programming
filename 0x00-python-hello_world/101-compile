@@ -1,2 +1,6 @@
 #!/bin/bash
-python3 -m compileall "$PYFILE" -b
+PYFILE=$PYFILE
+python3 -m py_compile "$PYFILE"
+COMPILED_FILE="${PYFILE}c"
+mv __pycache__/*.pyc "$COMPILED_FILE"
+rm -r __pycache__/
