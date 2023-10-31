@@ -5,4 +5,4 @@ for char in range(ord("a"), ord("z")+1):
     elif chr(char) == "q":
         pass
     else:
-        print(f"{chr(char)}", end="")
+        print("{}".format(chr(char)), end="")
