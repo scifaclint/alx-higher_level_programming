@@ -1,12 +1,4 @@
 #!/usr/bin/python3
+for i in range(26):
 
-
-current_char = 'z'
-
-for i in range(122, 64, -1):
-
-    print(f"{current_char}", end="")
-
-    current_char = current_char.swapcase()
-
-print("Y", end="")
+    print(chr(122 - i).swapcase() if i % 2 == 0 else chr(122 - i), end="")
