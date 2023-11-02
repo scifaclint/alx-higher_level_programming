@@ -1,5 +1,12 @@
 #!/usr/bin/python3
-for a in reversed(range(ord("a"), ord("z") + 1)):
-    if a % 2 != 0:
-        a = a - 32
-        print("{:c}".format(a), end="")
+
+
+current_char = 'z'
+
+for i in range(122, 64, -1):
+
+    print(f"{current_char}", end="")
+
+    current_char = current_char.swapcase()
+
+print("Y", end="")
