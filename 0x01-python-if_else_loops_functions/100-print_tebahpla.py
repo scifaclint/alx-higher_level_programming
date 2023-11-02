@@ -1,3 +1,6 @@
 #!/usr/bin/python3
-for i in range(ord('z'), ord('a') - 1, -1):
-    print("{}{}".format(chr(i), chr(i - 32) if i > ord('a') else ''), end='')
+for a in reversed(range(ord("a"), ord("z") + 1)):
+    if a % 2 != 0:
+        print("{:c}".format(a - 32), end="")
+    else:
+        print("{:c}".format(a), end="")
