@@ -1,0 +1,42 @@
+"""
+Test add_integer module for Possible and edge cases input
+""
+
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+# Test: Normal case
+>>> print(add_integer(1, 2))
+3
+
+# Test: Default value for b
+>>> print(add_integer(2))
+100
+
+# Test: Float inputs
+>>> print(add_integer(100.3, -2))
+98
+
+# Test: Non-number input for a
+>>> try:
+...     print(add_integer('4', 2))
+... except Exception as e:
+...     print(e)
+...
+a must be an integer
+
+# Test: Non-number input for b
+>>> try:
+...     print(add_integer(4, 'School'))
+... except Exception as e:
+...     print(e)
+...
+b must be an integer
+
+# Test: None input for a
+>>> try:
+...     print(add_integer(None, 2))
+... except Exception as e:
+...     print(e)
+...
+a must be an integer
