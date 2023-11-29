@@ -1,1 +1,0 @@
-objecs and mor 
