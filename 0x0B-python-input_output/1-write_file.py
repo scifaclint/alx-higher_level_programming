@@ -12,7 +12,7 @@ def write_file(filename="", text=""):
     Args:
         filename (str, optional): _description_. Defaults to "".
     Returns:
-        None
+        int:number of characters
     """
     with open(f"{filename}", "w", encoding="utf-8") as file:
         return file.write(text)
