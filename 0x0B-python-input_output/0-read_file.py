@@ -7,6 +7,3 @@ def read_file(filename=""):
     """
     with open(f"{filename}", "r") as file:
         print(file.read())
-
-
-read_file(filename="my_file_0.txt")
