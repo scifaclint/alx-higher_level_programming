@@ -13,7 +13,7 @@ def load_from_json_file(filename):
     Args:
         filename (any): should be a json file.
     Return:
-        None
+        The object representation of data
     """
     with open(filename, "r") as file:
-        data = json.load(file)
+        return json.loads(file)
