@@ -7,13 +7,12 @@
 
 def load_from_json_file(filename):
     """
-    Creates python dictionary from a 
-    json file.
+    Function to create an Object from a “JSON file”.
 
     Args:
-        filename (any): should be a json file.
+        filename (str): should be a json file.
     Return:
-        The object representation of data
+        The object representation of 'filename'.
     """
     with open(filename, "r", encoding="utf-8") as file:
         return json.load(file)
