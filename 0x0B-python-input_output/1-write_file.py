@@ -11,6 +11,7 @@ def write_file(filename="", text=""):
 
     Args:
         filename (str, optional): _description_. Defaults to "".
+        text (str): The text to write to the file. Defaults to "".
     Returns:
         int:number of characters
     """
