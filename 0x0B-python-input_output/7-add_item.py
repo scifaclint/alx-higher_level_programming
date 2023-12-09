@@ -24,4 +24,4 @@ else:
 for i in arguments:
     data.append(i)
     # save data to file
-    save_to_json_file(FILENAME, data)
+    save_to_json_file(data, FILENAME)
