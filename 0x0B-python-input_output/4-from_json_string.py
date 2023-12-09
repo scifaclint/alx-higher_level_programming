@@ -1,17 +1,17 @@
 #!/usr/bin/python3
 """
-    This script returns type of data type and more
+    This script returns type of data type and more.
 """
 import json
 
 
 def from_json_string(my_str):
     """
-    This function returns the type of data type and more
+    This function returns the type of data type and more.
 
     Args:
         my_str (_type_): _description_ takes the data.
     Returns:
-        dict: python object 
+        The object represented by `my_str`.
     """
     return json.loads(my_str)
