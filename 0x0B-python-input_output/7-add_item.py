@@ -18,9 +18,10 @@ load_from_json_file = __import__(
 if path.exists(FILENAME):
     # load data from file
     data = load_from_json_file(FILENAME)
-    for i in arguments:
-        data.append(i)
-        # save data to file
-        save_to_json_file(FILENAME, data)
 else:
-    save_to_json_file(FILENAME, arguments)
+    data = []
+
+for i in arguments:
+    data.append(i)
+    # save data to file
+    save_to_json_file(FILENAME, data)
