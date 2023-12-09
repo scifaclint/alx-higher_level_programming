@@ -5,5 +5,8 @@ def read_file(filename=""):
     Args:
         filename (str, optional): _description_. Defaults to "".
     """
-    with open(f"{filename}", "r") as file:
+    with open(f"{filename}", "r", encoding='utf-8') as file:
         print(file.read())
+
+
+
