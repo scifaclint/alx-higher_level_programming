@@ -6,7 +6,7 @@ def read_file(filename=""):
         filename (str, optional): _description_. Defaults to "".
     """
     with open(f"{filename}", "r", encoding='utf-8') as file:
-        print(file.read())
-
+        read_data = file.read()
+        print(read_data, end="")
 
 
