@@ -3,8 +3,7 @@
 # class rectangle
 
 class Rectangle():
-    def __init__(self):
-        """initialize a python class
-
-        """
-        pass
+    """an empty class
+    """
+    pass
+    
