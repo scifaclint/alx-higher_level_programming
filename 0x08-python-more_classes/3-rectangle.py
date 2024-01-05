@@ -1,12 +1,14 @@
 #!/usr/bin/python3
-"""Defines a Rectangle class here """
+"""Defines a Rectangle class"""
 
 
 class Rectangle:
-    """A Rectangle class with width and height and more """
+    """A Rectangle class with width, height, area,
+    perimeter, and string representation
+    """
 
     def __init__(self, width=0, height=0):
-        """Initialize  Rectangle instance"""
+        """Initialize a new Rectangle instance"""
         self.width = width
         self.height = height
 
@@ -17,7 +19,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """Set the width of the Rectangle here"""
+        """Set the width of the Rectangle"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -39,29 +41,17 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """Returns the area of rectangle"""
-        if self.__height == 0 or self.__width == 0:
-            return 0
-        else:
-            return self.__height * self.__width
+        """Return the area of the Rectangle"""
+        return self.__width * self.__height
 
     def perimeter(self):
-        """Returns the perimeter of the rectangle"""
+        """Return the perimeter of the Rectangle"""
         if self.__width == 0 or self.__height == 0:
             return 0
-        else:
-            return ((2 * self.__height) + (2 * self.__width))
+        return 2 * (self.__width + self.__height)
+
     def __str__(self):
-        """Print the string form of rectangle"""
-        if self.__height == 0 or self.__width == 0 :
+        """Return a string representation of the Rectangle"""
+        if self.__width == 0 or self.__height == 0:
             return ""
-        else:
-            return "##"
-    def __repr__(self):
-        """Return the string representation of"""
-        if self.__height == 0 or self.__width == 0 :
-            return ""
-        else:
-            return "##"
-        
-        
+        return "\n".join("#" * self.__width for _ in range(self.__height))
