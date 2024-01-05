@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 
-# class rectangle
+"""define an empty class
+"""
+
 
 class Rectangle():
     """an empty class
     """
     pass
-    
