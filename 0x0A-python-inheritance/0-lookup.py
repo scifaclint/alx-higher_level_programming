@@ -7,5 +7,7 @@ def lookup(obj):
 
     Args:
         obj (any): returns available atrributes
+    Returns:
+        List of attributes
     """
     return (dir(obj))
