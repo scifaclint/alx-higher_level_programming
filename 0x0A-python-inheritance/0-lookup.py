@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-
-# function to return object
+"""This module contains and does 
+   a whole lot on the object here
+"""
 
 def lookup(obj):
     """looks up for an object
