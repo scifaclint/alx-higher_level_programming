@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""This module contains and does 
-   a whole lot on the object here
+"""
+This module contains and does 
+whole lot on the object here
 """
 
 
