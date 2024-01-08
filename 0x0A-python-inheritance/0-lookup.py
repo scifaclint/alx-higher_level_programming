@@ -3,11 +3,13 @@
    a whole lot on the object here
 """
 
+
 def lookup(obj):
-    """looks up for an object
+    """looks up for an object and list of 
+       Attributes associated with an object
 
     Args:
-        obj (any): returns available atrributes
+        obj: Any object
     Returns:
         List of attributes
     """
